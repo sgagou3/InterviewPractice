@@ -10,7 +10,7 @@ public class WordBreak {
         return answer;
     }
 
-    public static void get(String s, String current, Set<String> seen, List<String> answer) {
+    private static void get(String s, String current, Set<String> seen, List<String> answer) {
         if (seen.contains(s)) {
             answer.add(current + s);
         }
